@@ -45,6 +45,9 @@ class AnalysisAreaAndSampleTakingTests(TestCase):
             "parentPhysicalThingTileData": JSONSerializer().serialize(
                 {parent_phys_thing: []}
             ),
+            "partIdentifierAssignmentTileData": JSONSerializer().serialize(
+                {part_identifier_assignment: []}
+            ),
         }
         response = client.post(reverse("deleteanalysisarea"), delete_data)
 
